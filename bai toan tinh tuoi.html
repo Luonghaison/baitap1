@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinhtuoi</title>
+</head>
+<body>
+<lable>Nhap tuoi cua em:<input tyle="number" value="tuoiem" id="em"></lable>
+<button onclick="submit()">Submit</button>
+<p id="anh"></p>
+<p id="bo"></p>
+<script>
+    function submit() {
+        let tuoiem=+document.getElementById("em").value
+        let tuoianh=tuoiem+3
+        let tuoibo=6*tuoianh
+        document.getElementById("anh").innerHTML="So tuoi cua anh la:" + tuoianh;
+        document.getElementById("bo").innerHTML="So tuoi cua bo la:" + tuoibo
+    }
+
+</script>
+</body>
+</html>

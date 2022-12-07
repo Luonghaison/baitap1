@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiemtratamgiac</title>
+</head>
+<body>
+<lable>
+  Nhap canh thu nhat: <input type="number" id="canh1" value="canh1">
+</lable>
+<br>
+<lable>
+  Nhap canh thu 2: <input type="number" id="canh2" value="canh2">
+</lable>
+<br>
+<lable>
+  Nhap canh thu 3: <input type="number" id="canh3" value="canh3">
+</lable>
+<br>
+<button onclick="kiemtra()">Bam vao day de kiem tra</button>
+<p id="ketqua" type="number" value="ketqua"></p>
+<script>
+    function kiemtra() {
+        let canh1=+document.getElementById("canh1").value;
+        let canh2=+document.getElementById("canh2").value;
+        let canh3=+document.getElementById("canh3").value;
+        if(canh1==0 || canh2==0 || canh3==0) {alert("Day khong phai la 3 canh cua tam giac!!!")}
+        if (canh1<(canh2+canh3) || (canh2<(canh1+canh3)) || (canh3<(canh1+canh2))) {
+            if ((canh1*canh1)==(canh2*canh2)+(canh3*canh3) || (canh2*canh2)==(canh1*canh1)+(canh3*canh3) || (canh3*canh3)==(canh1*canh1)+(canh2*canh2)){
+                document.getElementById("ketqua").innerText="Day la tam giac vuong"
+            }
+            else{
+                document.getElementById("ketqua").innerText="Day ko phai la tam giac vuong"
+            }
+
+
+        } else{
+            document.getElementById("ketqua").innerText="Day ko phai tam giac"
+        }
+    }
+
+</script>
+</body>
+</html>

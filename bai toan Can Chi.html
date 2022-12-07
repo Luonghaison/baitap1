@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canchi</title>
+</head>
+<body>
+
+<script>
+    let year = +prompt("Nhap vao nam sinh cua ban")
+    let can = year % 10;
+    let canName;
+    switch (can) {
+        case 0:
+            canName = "Canh"
+            break;
+
+        case 1:
+            canName = "Than"
+            break;
+
+        case 2:
+            canName = "Nham"
+            break;
+
+        case 3:
+            canName = "Quy"
+            break;
+
+        case 4:
+            canName = "Giap"
+            break;
+
+        case 5:
+            canName = "At"
+            break;
+
+        case 6:
+            canName = "Binh"
+            break;
+
+        case 7:
+            canName = "Dinh"
+            break;
+
+        case 8:
+            canName = "Mau"
+            break;
+
+        case 9:
+            canName = "Ky"
+            break;
+
+    }
+    let chi = year % 12;
+    let chiName;
+    switch (chi) {
+        case 0:
+            chiName = "Than"
+            break;
+        case 1:
+            chiName = "Dau"
+            break;
+        case 2:
+            chiName = "Tuat"
+            break;
+        case 3:
+            chiName = "Hoi"
+            break;
+        case 4:
+            chiName = "Ti"
+            break;
+        case 5:
+            chiName = "Suu"
+            break;
+        case 6:
+            chiName = "Dan"
+            break;
+        case 7:
+            chiName = "Mao"
+            break;
+        case 8:
+            chiName = "Thin"
+            break;
+        case 9:
+            chiName = "Ti"
+            break;
+        case 10:
+            chiName = "Ngo"
+            break;
+
+
+    }
+    alert("nam"+" "+year+" "+"la"+" "+canName+" "+chiName)
+</script>
+
+</body>
+</html>
